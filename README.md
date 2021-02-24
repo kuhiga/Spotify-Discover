@@ -1,4 +1,10 @@
 # flute-salad
+https://flute-salad.herokuapp.com/
+
+things to change:
+make design cleaner,
+allow user to add more than one artist (up to 5),
+filter out songs that are already liked by user,
 
 ## Project setup
 ```
