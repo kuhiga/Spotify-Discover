@@ -22,7 +22,7 @@ export default {
       const hash = window.location.hash
         .substring(1)
         .split("&")
-        .reduce(function (initial, item) {
+        .reduce(function(initial, item) {
           if (item) {
             var parts = item.split("=");
             initial[parts[0]] = decodeURIComponent(parts[1]);
@@ -37,7 +37,7 @@ export default {
 
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "75c9efa0c2154fea87c9a3ae844de53e";
-      const redirectUri = "http://localhost:8080/home";
+      const redirectUri = "./home";
       const scopes = [
         "user-library-read",
         "user-library-modify",
