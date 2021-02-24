@@ -37,7 +37,7 @@ export default {
 
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "75c9efa0c2154fea87c9a3ae844de53e";
-      const redirectUri = "home";
+      const redirectUri = "https://flute-salad.herokuapp.com/home";
       const scopes = [
         "user-library-read",
         "user-library-modify",
