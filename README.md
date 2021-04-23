@@ -1,5 +1,5 @@
 # flute-salad
-
+get a new playlist based on favorite artist
 ## Project setup
 ```
 npm install
