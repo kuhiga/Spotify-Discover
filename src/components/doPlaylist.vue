@@ -72,6 +72,7 @@ export default {
           ) {
             this.cutTopTracksForEachArtist(i);
 
+
           }
           this.playlistName = "Flute Salad Mix: " + this.chosen_artists[0].name;
 
