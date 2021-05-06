@@ -13,9 +13,9 @@
         <doPlaylist />
       </div>
     </div>
-    <div id="bottom">
+    <!-- <div id="bottom">
       <footerSection />
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -144,5 +144,4 @@ h3 {
 .home-page {
   margin: 25px;
 }
-
 </style>
