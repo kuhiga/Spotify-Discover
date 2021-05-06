@@ -19,10 +19,6 @@ export default {
 #footerSection {
   color: Black;
   text-align: left;
-  clear: both;
-  position: relative;
-  height: 200px;
-  margin-top: -200px;
 }
 hr {
   width: 100%;
