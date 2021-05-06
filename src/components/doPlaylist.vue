@@ -71,14 +71,12 @@ export default {
             i++
           ) {
             this.cutTopTracksForEachArtist(i);
-
           }
           this.playlistName = "Flute Salad Mix: " + this.chosen_artists[0].name;
 
           this.makePlaylist();
           this.$store.commit("disable_doPlaylist");
         }
-
       },
     },
   },
@@ -206,15 +204,11 @@ export default {
       //   });
     },
     cutTopTracksForEachArtist(index) {
-
-  
-
       this.condensedTopTrack[index] = [];
       var condition = true;
       while (this.condensedTopTrack[index].length < 50 && condition) {
         for (var i = 0; i < this.topTracks[index].length; i++) {
           if (this.condensedTopTrack[index].length > 50 || !condition) {
-
             break;
           } else {
             // this.condensedTopTrack[index][i] = [];
@@ -234,8 +228,6 @@ export default {
           }
         }
       }
-
-
     },
   },
 };
@@ -278,7 +270,12 @@ a:visited {
   color: #228b22;
 }
 img {
+  box-shadow: 0 6px 8px -4px rgba(0, 0, 0, 0.3);
   vertical-align: middle;
+}
+img:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.2);
 }
 .loaded-more-btn,
 .load-more-btn {

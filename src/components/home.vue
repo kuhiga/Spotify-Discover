@@ -66,7 +66,7 @@ export default {
   //     });
   // },
   methods: {
-    setAccessToken: function() {
+    setAccessToken: function () {
       // let self = this;
       var hash = window.location.hash.substring(1);
       var accessString = hash.indexOf("&");
@@ -144,4 +144,5 @@ h3 {
 .home-page {
   margin: 25px;
 }
+
 </style>

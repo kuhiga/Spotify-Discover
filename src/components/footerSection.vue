@@ -19,6 +19,10 @@ export default {
 #footerSection {
   color: Black;
   text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
 }
 hr {
   width: 100%;

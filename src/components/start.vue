@@ -1,7 +1,6 @@
 <template>
   <div class="start">
     <h1>🎶flute salad 🥗</h1>
-    <!-- <h2 style="color:darkslategrey;margin-top:-20px">Drop the beet</h2> -->
     <h2>Analyze your music taste and discover similar music.</h2>
     <button type="submit" class="login-btn" @click="sendRequest()">
       <img src="../assets/Spotify_Icon_RGB_White.png" />
@@ -22,7 +21,7 @@ export default {
       const hash = window.location.hash
         .substring(1)
         .split("&")
-        .reduce(function(initial, item) {
+        .reduce(function (initial, item) {
           if (item) {
             var parts = item.split("=");
             initial[parts[0]] = decodeURIComponent(parts[1]);
@@ -38,6 +37,7 @@ export default {
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "75c9efa0c2154fea87c9a3ae844de53e";
       const redirectUri = "https://flute-salad.herokuapp.com/home";
+
       const scopes = [
         "user-library-read",
         "user-library-modify",

@@ -40,7 +40,6 @@ export default {
   components: {},
   created() {
     // this.getAccessToken();
-
   },
   computed: {
     chosen_artists() {
@@ -118,12 +117,30 @@ input {
   width: 100%;
   height: 30px;
   font-size: 20px;
+  font-size: 20px;
+  line-height: 40px;
+  -ms-flex: 1;
+  flex: 1;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0 none;
+  color: green;
+  outline: 0 none;
+  min-width: 0;
+  margin: 0;
+  padding: 0 10px 0 0;
+  border-bottom: 2px solid green;
 }
 .search-suggestions {
   position: absolute;
   z-index: 2;
   width: 100%;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  transition: background-color 0.2s;
 }
 .search-suggestions li {
   list-style-type: none;
@@ -146,7 +163,7 @@ input {
   float: left;
   margin-right: 10px;
   border: 1px green solid;
-  background-color: green;
+  background-color: forestgreen;
   color: white;
   padding: 5px;
 }
