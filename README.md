@@ -1,6 +1,15 @@
-# flute-salad
-get a new playlist based on favorite artist
-https://flute-salad.herokuapp.com/
+# flute-salad Spotify Discover App
+This is a web application that uses the Spotify API to allow users to create a savable playlist that includes brand new music based
+on their favorite artists.
+Technologies used: Vue.js, Spotify API
+
+try here:
+step 1: https://flute-salad.herokuapp.com/
+step 2: Connect to your Spotify account.
+step 3: Search for your favorite artist.
+step 4: Save new playlist.
+
+
 
 things to change:
 change design,
