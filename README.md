@@ -4,6 +4,8 @@ on their favorite artists.
 
 Technologies used: Vue.js, Spotify API
 
+![Flute Salad App Demo](flute-salad-demo.gif)
+
 try here:
 step 1: https://flute-salad.herokuapp.com/
 
