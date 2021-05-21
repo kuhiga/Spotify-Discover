@@ -35,27 +35,20 @@ export const store = new Vuex.Store({
     add_related_artists(state, load) {
       var index = load[0];
       var artists = load[1];
-      // state.related_artists[index] = [];
-      // var yes = [];
-      // yes.push(artists);
+
       state.related_artists.splice(index, 1, artists);
-      // state.related_artists[index].push(artists);
       state.related_artists_length = state.related_artists.length;
     },
     remove_related_artists(state, idx) {
-      // state.related_artists = state.related_artists.filter(function(obj) {
-      //   return obj.id !== id;
-      // });
+ 
       state.related_artists.splice(idx, 1);
       state.related_artists_length = state.related_artists.length;
     },
     add_topTracks(state, load) {
       var index = load[0];
       var tracks = load[1];
-      // state.topTracks[index] = [];
 
       state.topTracks.splice(index, 1, tracks);
-      // state.topTracks[index].push(tracks);
       state.topTracksLength = state.topTracks.length;
     },
     remove_topTracks(state, idx) {

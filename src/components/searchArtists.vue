@@ -39,7 +39,6 @@ export default {
   name: "searchArtists",
   components: {},
   created() {
-    // this.getAccessToken();
   },
   computed: {
     chosen_artists() {
@@ -99,8 +98,6 @@ export default {
       }
     },
     removeArtist: function (idx) {
-      // var self = this;
-      // self.chosen_artists.splice(id, 1);
       this.$store.commit("remove_artist", idx);
       this.$store.commit("remove_related_artists", idx);
       this.$store.commit("remove_topTracks", idx);

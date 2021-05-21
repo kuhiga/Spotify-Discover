@@ -182,26 +182,12 @@ export default {
           } else if (
             this.condensedTopTrack[i].every((val, i, arr) => val === arr[0])
           ) {
-            // console.log("exiting");
             count = 50;
             break;
           }
         }
       }
 
-      // Vue.axios
-      //   .get(`https://api.spotify.com/v1/tracks/${this.finalTracks}`, {
-      //     headers: {
-      //       Authorization: "Bearer " + this.accessToken,
-      //     },
-      //   })
-      //   .then((response) => {
-      //     console.log("adding tracks");
-      //     this.names.push(response.data.name);
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //   });
     },
     cutTopTracksForEachArtist(index) {
       this.condensedTopTrack[index] = [];
