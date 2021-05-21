@@ -187,7 +187,6 @@ export default {
           }
         }
       }
-
     },
     cutTopTracksForEachArtist(index) {
       this.condensedTopTrack[index] = [];

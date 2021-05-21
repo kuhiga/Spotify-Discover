@@ -38,8 +38,7 @@ export default {
   props: [""],
   name: "searchArtists",
   components: {},
-  created() {
-  },
+  created() {},
   computed: {
     chosen_artists() {
       return this.$store.getters.get_chosen_artists;

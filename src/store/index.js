@@ -40,7 +40,6 @@ export const store = new Vuex.Store({
       state.related_artists_length = state.related_artists.length;
     },
     remove_related_artists(state, idx) {
- 
       state.related_artists.splice(idx, 1);
       state.related_artists_length = state.related_artists.length;
     },
