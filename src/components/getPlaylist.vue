@@ -44,7 +44,6 @@ export default {
             self.getTopTracks(j, k);
           }
         }
-
       },
     },
   },
@@ -66,7 +65,6 @@ export default {
     },
   },
   methods: {
-
     getTopTracks: function (j, k) {
       var self = this;
       var artistID = this.related_artists[j][k];
