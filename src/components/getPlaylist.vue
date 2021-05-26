@@ -1,3 +1,5 @@
+<!-- Given a chosen artist, this component is responsible for computing the related artist and their top songs -->
+
 <template>
   <div id="track-list"><br /><br /><br /><br /></div>
 </template>
@@ -8,13 +10,7 @@ export default {
   props: [],
   name: "getPlaylist",
   components: {},
-  created() {
-    if (this.accessToken != null) {
-      // this.displaySongs();
-    } else {
-      console.log("ooooof");
-    }
-  },
+
   data() {
     return {
       fileredTopTracksForRelated: [],
@@ -49,7 +45,6 @@ export default {
           }
         }
 
-        // this.$store.commit("enable_doPlaylist");
       },
     },
   },
@@ -71,10 +66,7 @@ export default {
     },
   },
   methods: {
-    loadMore: function () {
-      this.offset += 50;
-      this.displaySongs();
-    },
+
     getTopTracks: function (j, k) {
       var self = this;
       var artistID = this.related_artists[j][k];
@@ -93,12 +85,7 @@ export default {
             individualTracks.push(response.data.tracks[song].id);
           }
           this.fileredTopTracksForRelated[j][k] = individualTracks;
-          // console.log(
-          //   "here it is: ",
-          //   j,
-          //   " : ",
-          //   this.fileredTopTracksForRelated
-          // );
+
           this.$store.commit("add_topTracks", [
             j,
             this.fileredTopTracksForRelated[j],
@@ -161,20 +148,6 @@ td {
   padding: 15px;
 }
 
-.load-more-btn {
-  float: left;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #228b22;
-  color: white;
-  background-color: #228b22 !important;
-  font-size: 15px;
-  border-radius: 60px;
-}
-.load-more-btn:hover {
-  background-color: #228c39 !important;
-  transform: scale(1.05);
-}
 a {
   color: black;
   text-decoration: none;

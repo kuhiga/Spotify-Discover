@@ -1,3 +1,4 @@
+<!-- This component is responsible for the home screen -->
 <template>
   <div class="home-page">
     <div id="header">

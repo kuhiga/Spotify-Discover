@@ -1,3 +1,5 @@
+<!-- This component is responsible for the searching for artist functionality -->
+
 <template>
   <div id="search-menu">
     <input

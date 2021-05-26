@@ -1,3 +1,5 @@
+<!-- This component for creating the final playlist and displaying it -->
+
 <template>
   <div v-if="this.finalTracks.length != 0" id="track-list">
     <div v-if="this.clicked == 0">

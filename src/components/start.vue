@@ -1,3 +1,4 @@
+<!-- This component is responsible for the start screen where user connects to spotify -->
 <template>
   <div class="start">
     <h1>🎶flute salad 🥗</h1>
