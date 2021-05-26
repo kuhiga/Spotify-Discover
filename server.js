@@ -1,3 +1,4 @@
+//server file
 const express = require("express");
 const serveStatic = require("serve-static");
 const path = require("path");
