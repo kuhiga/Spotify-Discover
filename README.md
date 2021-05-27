@@ -19,7 +19,8 @@ From this project, I was able to learn about state management with VueX and mani
 
 ![Flute Salad App Demo](flute-salad-demo.gif)
 
-try here:
+Try it here:
+
 step 1: https://flute-salad.herokuapp.com/
 
 step 2: Connect to your Spotify account.
@@ -29,9 +30,9 @@ step 3: Search for your favorite artist.
 step 4: Save new playlist.
 
 
+Things to work on:
 
-things to change:
-
-change design,
-allow user to add more than one artist (up to 5),
-filter out songs that are already liked by user,
+- a more reactive design
+- allow user to add more than one artist (up to 5)
+- filter out songs that are already liked by user
+- create a filter menu (number of tracks, genre, mood)
