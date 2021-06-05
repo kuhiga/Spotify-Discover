@@ -36,3 +36,5 @@ Things to work on:
 - allow user to add more than one artist (up to 5)
 - filter out songs that are already liked by user
 - create a filter menu (number of tracks, genre, mood)
+- add database to store all playlists created with application (maybe keep 5 most recently created)
+- display previews of recently created playlists, which users can click into  -> display ->option to save
